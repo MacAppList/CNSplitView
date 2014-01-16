@@ -16,3 +16,5 @@ profile
 .DS_Store
 bin/
 Resources/
+Example/Pods/
+Example/Podfile.lock
