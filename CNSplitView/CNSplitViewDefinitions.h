@@ -8,17 +8,17 @@
 /*
  The MIT License (MIT)
  Copyright © 2012 Frank Gregor, <phranck@cocoanaut.com>
- 
+
  Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the “Software”), to deal
  in the Software without restriction, including without limitation the rights
  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
  copies of the Software, and to permit persons to whom the Software is
  furnished to do so, subject to the following conditions:
- 
+
  The above copyright notice and this permission notice shall be included in
  all copies or substantial portions of the Software.
- 
+
  THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -33,35 +33,34 @@
 #pragma clang diagnostic ignored "-Wunused-variable"
 
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /// SplitView related parameter
-typedef enum {
-    CNSplitViewDeviderOrientationVertical = 0,
-    CNSplitViewDeviderOrientationHorizontal
-} CNSplitViewDeviderOrientation;
+typedef NS_ENUM (NSInteger, CNSplitViewDeviderOrientation) {
+	CNSplitViewDeviderOrientationVertical = 0,
+	CNSplitViewDeviderOrientationHorizontal
+};
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /// Toolbar related parameter
-typedef enum {
-    CNSplitViewToolbarEdgeUndefined = 0,
-    CNSplitViewToolbarEdgeBottom,
-    CNSplitViewToolbarEdgeTop
-} CNSplitViewToolbarEdge;
+typedef NS_ENUM (NSInteger, CNSplitViewToolbarEdge) {
+	CNSplitViewToolbarEdgeUndefined = 0,
+	CNSplitViewToolbarEdgeBottom,
+	CNSplitViewToolbarEdgeTop
+};
 
-typedef enum {
-    CNSplitViewToolbarVisibilityHidden = 0,
-    CNSplitViewToolbarVisibilityVisible
-} CNSplitViewToolbarVisibility;
+typedef NS_ENUM (NSInteger, CNSplitViewToolbarVisibility) {
+	CNSplitViewToolbarVisibilityHidden = 0,
+	CNSplitViewToolbarVisibilityVisible
+};
 
-typedef enum {
-    CNSplitViewToolbarContentAlignItemDirected = 0,
-    CNSplitViewToolbarContentAlignCentered
-} CNSplitViewToolbarContentAlign;
+typedef NS_ENUM (NSInteger, CNSplitViewToolbarContentAlign) {
+	CNSplitViewToolbarContentAlignItemDirected = 0,
+	CNSplitViewToolbarContentAlignCentered
+};
 
-typedef enum {
-    CNSplitViewToolbarItemAlignLeft = 0,
-    CNSplitViewToolbarItemAlignRight
-} CNSplitViewToolbarItemAlign;
+typedef NS_ENUM (NSInteger, CNSplitViewToolbarItemAlign) {
+	CNSplitViewToolbarItemAlignLeft = 0,
+	CNSplitViewToolbarItemAlignRight
+};
+
 
 /// Notifications
 extern NSString *CNSplitViewInjectReferenceNotification;
@@ -73,30 +72,31 @@ extern NSString *CNSplitViewDidShowToolbarNotification;
 extern NSString *CNSplitViewWillHideToolbarNotification;
 extern NSString *CNSplitViewDidHideToolbarNotification;
 
+
 /// Keys for the userInfo dictionary of Notifications
 extern NSString *CNUserInfoToolbarKey;
 extern NSString *CNUserInfoEdgeKey;
 
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /// Toolbar button related parameter
 /// @see http://developer.apple.com/library/mac/#documentation/userexperience/conceptual/applehiguidelines/SystemProvidedIcons/SystemProvidedIcons.html
 typedef enum {
-    CNSplitViewToolbarButtonImageTemplatePlain = 0,
-    CNSplitViewToolbarButtonImageTemplateAdd,
-    CNSplitViewToolbarButtonImageTemplateRemove,
-    CNSplitViewToolbarButtonImageTemplateQuickLook,
-    CNSplitViewToolbarButtonImageTemplateAction,
-    CNSplitViewToolbarButtonImageTemplateShare,
-    CNSplitViewToolbarButtonImageTemplateIconView,
-    CNSplitViewToolbarButtonImageTemplateListView,
-    CNSplitViewToolbarButtonImageTemplateLockLocked,
-    CNSplitViewToolbarButtonImageTemplateLockUnlocked,
-    CNSplitViewToolbarButtonImageTemplateGoRight,
-    CNSplitViewToolbarButtonImageTemplateGoLeft,
-    CNSplitViewToolbarButtonImageTemplateStopProgress,
-    CNSplitViewToolbarButtonImageTemplateRefresh,
+	CNSplitViewToolbarButtonImageTemplatePlain = 0,
+	CNSplitViewToolbarButtonImageTemplateAdd,
+	CNSplitViewToolbarButtonImageTemplateRemove,
+	CNSplitViewToolbarButtonImageTemplateQuickLook,
+	CNSplitViewToolbarButtonImageTemplateAction,
+	CNSplitViewToolbarButtonImageTemplateShare,
+	CNSplitViewToolbarButtonImageTemplateIconView,
+	CNSplitViewToolbarButtonImageTemplateListView,
+	CNSplitViewToolbarButtonImageTemplateLockLocked,
+	CNSplitViewToolbarButtonImageTemplateLockUnlocked,
+	CNSplitViewToolbarButtonImageTemplateGoRight,
+	CNSplitViewToolbarButtonImageTemplateGoLeft,
+	CNSplitViewToolbarButtonImageTemplateStopProgress,
+	CNSplitViewToolbarButtonImageTemplateRefresh,
 } CNSplitViewToolbarButtonImageTemplate;
+
 
 extern CGFloat kDefaultVerticalDraggingHandleWidth, kDefaultHorizontalDraggingHandleWidth;
 

@@ -25,7 +25,6 @@
 		FD4DEBBD16BBECF900CE120A /* CNSplitViewDraggingHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4DEBBC16BBECF900CE120A /* CNSplitViewDraggingHandle.m */; };
 		FD7730FE16D45686007F3E17 /* NSView+CNSplitViewToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7730FD16D45686007F3E17 /* NSView+CNSplitViewToolbar.m */; };
 		FD7F866716A047A500D7BA7C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7F866616A047A500D7BA7C /* QuartzCore.framework */; };
-		FD9178E516B2CA380026E4D9 /* CNSplitView-Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = FD9178E416B2CA380026E4D9 /* CNSplitView-Icon.icns */; };
 		FDD47B3716B4BF7600ADAB76 /* SplitLeaf-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FDD47B3616B4BF7600ADAB76 /* SplitLeaf-Icon.png */; };
 		FDDC62D01695B39F00BE7A82 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDC62CF1695B39F00BE7A82 /* Cocoa.framework */; };
 		FDDC62DA1695B39F00BE7A82 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDDC62D81695B39F00BE7A82 /* InfoPlist.strings */; };
@@ -49,7 +48,6 @@
 		FD7730FC16D45686007F3E17 /* NSView+CNSplitViewToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+CNSplitViewToolbar.h"; sourceTree = "<group>"; };
 		FD7730FD16D45686007F3E17 /* NSView+CNSplitViewToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+CNSplitViewToolbar.m"; sourceTree = "<group>"; };
 		FD7F866616A047A500D7BA7C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		FD9178E416B2CA380026E4D9 /* CNSplitView-Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = "CNSplitView-Icon.icns"; path = "../CNSplitView-Icon.icns"; sourceTree = "<group>"; };
 		FD9178E616B2D4EF0026E4D9 /* CNLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNLog.h; sourceTree = "<group>"; };
 		FDD47B3616B4BF7600ADAB76 /* SplitLeaf-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SplitLeaf-Icon.png"; sourceTree = "<group>"; };
 		FDDC62CC1695B39F00BE7A82 /* CNSplitView Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CNSplitView Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +72,7 @@
 		FDDC630C1695B4A900BE7A82 /* CNSplitViewToolbarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSplitViewToolbarButton.m; sourceTree = "<group>"; };
 		FDDC630D1695B4A900BE7A82 /* CNSplitViewToolbarButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSplitViewToolbarButtonCell.h; sourceTree = "<group>"; };
 		FDDC630E1695B4A900BE7A82 /* CNSplitViewToolbarButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSplitViewToolbarButtonCell.m; sourceTree = "<group>"; };
-		FDEF7F77188885A1007D7A19 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FDEF7F77188885A1007D7A19 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "CNSplitView Example/Images.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +93,9 @@
 			isa = PBXGroup;
 			children = (
 				FDDC62D51695B39F00BE7A82 /* CNSplitView Example */,
+				FDDC62D61695B39F00BE7A82 /* Supporting Files */,
+				FDDC63031695B4A900BE7A82 /* CNSplitView */,
+				FDEF7F77188885A1007D7A19 /* Images.xcassets */,
 				FDDC62CE1695B39F00BE7A82 /* Frameworks */,
 				FDDC62CD1695B39F00BE7A82 /* Products */,
 				CEDF412D6B4F4F3291DC8BCD /* Pods.xcconfig */,
@@ -136,9 +137,6 @@
 				FDDC62E11695B39F00BE7A82 /* CNAppDelegate.h */,
 				FDDC62E21695B39F00BE7A82 /* CNAppDelegate.m */,
 				FDDC62E41695B39F00BE7A82 /* MainMenu.xib */,
-				FDDC62D61695B39F00BE7A82 /* Supporting Files */,
-				FDDC63031695B4A900BE7A82 /* CNSplitView */,
-				FDEF7F77188885A1007D7A19 /* Images.xcassets */,
 			);
 			path = "CNSplitView Example";
 			sourceTree = "<group>";
@@ -147,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				FD9178E616B2D4EF0026E4D9 /* CNLog.h */,
-				FD9178E416B2CA380026E4D9 /* CNSplitView-Icon.icns */,
 				FDDC62D71695B39F00BE7A82 /* CNSplitView Example-Info.plist */,
 				FDDC62D81695B39F00BE7A82 /* InfoPlist.strings */,
 				FDDC62DB1695B39F00BE7A82 /* main.m */,
@@ -156,6 +153,7 @@
 				FDD47B3616B4BF7600ADAB76 /* SplitLeaf-Icon.png */,
 			);
 			name = "Supporting Files";
+			path = "CNSplitView Example";
 			sourceTree = "<group>";
 		};
 		FDDC63031695B4A900BE7A82 /* CNSplitView */ = {
@@ -177,7 +175,7 @@
 				FD7730FD16D45686007F3E17 /* NSView+CNSplitViewToolbar.m */,
 			);
 			name = CNSplitView;
-			path = ../../CNSplitView;
+			path = ../CNSplitView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,7 +207,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = CN;
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "cocoa:naut";
 			};
 			buildConfigurationList = FDDC62C71695B39F00BE7A82 /* Build configuration list for PBXProject "CNSplitView Example" */;
@@ -239,7 +237,6 @@
 				FDDC62E01695B39F00BE7A82 /* Credits.rtf in Resources */,
 				FDDC62E61695B39F00BE7A82 /* MainMenu.xib in Resources */,
 				FDEF7F78188885A1007D7A19 /* Images.xcassets in Resources */,
-				FD9178E516B2CA380026E4D9 /* CNSplitView-Icon.icns in Resources */,
 				FDD47B3716B4BF7600ADAB76 /* SplitLeaf-Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,7 +341,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -377,7 +373,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
