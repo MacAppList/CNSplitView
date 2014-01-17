@@ -26,7 +26,7 @@ Download the entire project from Github via `git clone https://github.com/phranc
 
 
 ##Usage
-To run the example application you have to *complete* this project by opening a terminal and `cd` into the directory where your `CNSplitView Example.xcodeproj` is. Here you will find a `Podfile`. Type `pod install` (or `pod update` if you have done it before) to get (or update) all dependencies. `CNSplitView` needs another component [`CNBaseView`](https://github.com/phranck/CNBaseView).
+To run the example application you have to *complete* this project by opening a terminal and `cd` into the directory where your `CNSplitView Example.xcodeproj` is. Here you will find a `Podfile`. Type `pod install` (or `pod update` if you have done it before) to install (or update) all dependencies. `CNSplitView` needs another component [`CNBaseView`](https://github.com/phranck/CNBaseView).
 
 After the creation of `CNSplitView Example.xcworkspace` you're done. Now you **only** have to use the workspace file!
 

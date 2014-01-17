@@ -19,8 +19,11 @@ static NSUInteger attachedSubViewIndex = 0;
 @implementation CNAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-	self.secondView.text = @"A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.";
-	self.secondView.textBoxWidth = 380;
+    NSString *placeholder = @"A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.";
+//	self.secondView.text = placeholder;
+    self.secondView.attributedText = [[NSAttributedString alloc] initWithString:placeholder attributes:[self placeholderTextAttributes]];
+	self.secondView.textBoxWidth = 350;
+    self.secondView.iconTextMargin = 20.0;
 	self.secondView.icon = [NSImage imageNamed:@"SplitLeaf-Icon"];
 	self.secondView.iconVerticalOffset = 70;
 
@@ -71,8 +74,27 @@ static NSUInteger attachedSubViewIndex = 0;
 	[self.splitView attachToolbar:toolbar toSubViewAtIndex:attachedSubViewIndex onEdge:CNSplitViewToolbarEdgeBottom];
 }
 
-- (void)awakeFromNib {
+#pragma mark - Helper
+
+- (NSDictionary *)placeholderTextAttributes {
+    NSShadow *textShadow = [[NSShadow alloc] init];
+    [textShadow setShadowColor: [NSColor whiteColor]];
+    [textShadow setShadowOffset: NSMakeSize(0, -1)];
+
+    NSMutableParagraphStyle *textStyle = [[NSMutableParagraphStyle defaultParagraphStyle] mutableCopy];
+    [textStyle setAlignment: NSCenterTextAlignment];
+
+    NSDictionary *attr = @{
+        NSFontAttributeName :               [NSFont fontWithName:@"HelveticaNeue" size:15],
+        NSForegroundColorAttributeName :    [NSColor grayColor],
+        NSShadowAttributeName :             textShadow,
+        NSParagraphStyleAttributeName :     textStyle,
+        NSKernAttributeName :               @(0.80)
+    };
+    return attr;
 }
+
+#pragma mark - Actions
 
 - (void)contextMenuItemSelection:(id)sender {
 	CNLog(@"selected menu item: %@", [(NSMenuItem *)sender title]);
