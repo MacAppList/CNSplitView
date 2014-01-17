@@ -10,14 +10,6 @@
 
 @implementation CNToolbarView
 
-- (id)initWithFrame:(NSRect)frame {
-	self = [super initWithFrame:frame];
-	if (self) {
-		// Initialization code here.
-	}
-	return self;
-}
-
 - (void)drawRect:(NSRect)dirtyRect {
 	NSRect bounds = [self bounds];
     NSGradient *backgroundGradient = [[NSGradient alloc] initWithStartingColor:[NSColor colorWithCalibratedWhite:0.656 alpha:1.000]
