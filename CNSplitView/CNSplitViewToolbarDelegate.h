@@ -22,7 +22,7 @@
 
 @class CNSplitView, CNSplitViewToolbar;
 
-@protocol CNSplitViewToolbarDelegate <NSObject>
+@protocol CNSplitViewToolbarDelegate <NSSplitViewDelegate>
 @required
 /**
  Asks the delegate about the index of the subview where the toolbar is attached to.

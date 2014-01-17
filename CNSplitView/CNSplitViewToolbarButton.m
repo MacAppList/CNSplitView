@@ -38,143 +38,126 @@
 @end
 
 @implementation CNSplitViewToolbarButton
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 #pragma mark - Initialzation
-+ (Class)cellClass
-{
-    return [CNSplitViewToolbarButtonCell class];
++ (Class)cellClass {
+	return [CNSplitViewToolbarButtonCell class];
 }
 
-- (instancetype)initWithContextMenu:(NSMenu *)theContextMenu
-{
-    self = [self init];
-    if (self) {
-        _itemContextMenu = theContextMenu;
-    }
-    return self;
+- (instancetype)initWithContextMenu:(NSMenu *)theContextMenu {
+	self = [self init];
+	if (self) {
+		_itemContextMenu = theContextMenu;
+	}
+	return self;
 }
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        [self commonConfiguration];
-    }
-    return self;
+- (instancetype)init {
+	self = [super init];
+	if (self) {
+		[self commonConfiguration];
+	}
+	return self;
 }
 
-- (void)commonConfiguration
-{
-    _imageTemplate = CNSplitViewToolbarButtonImageTemplatePlain;
-    _itemContextMenu = nil;
+- (void)commonConfiguration {
+	_imageTemplate = CNSplitViewToolbarButtonImageTemplatePlain;
+	_itemContextMenu = nil;
 
-    [self setAutoresizingMask:NSViewNotSizable];
-    [self setImagePosition:NSImageLeft];
-    [self setButtonType:NSMomentaryPushInButton];
-    [self setBezelStyle:NSSmallSquareBezelStyle];
-    [self setTitle:@""];
+	[self setAutoresizingMask:NSViewNotSizable];
+	[self setImagePosition:NSImageLeft];
+	[self setButtonType:NSMomentaryPushInButton];
+	[self setBezelStyle:NSSmallSquareBezelStyle];
+	[self setTitle:@""];
 
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(enableMe) name:CNSplitViewToolbarItemsEnableNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(disableMe) name:CNSplitViewToolbarItemsDisableNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(windowStatusChanged) name:NSWindowDidBecomeKeyNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(windowStatusChanged) name:NSWindowDidResignKeyNotification object:nil];
+    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+	[nc addObserver:self selector:@selector(enableMe) name:CNSplitViewToolbarItemsEnableNotification object:nil];
+	[nc addObserver:self selector:@selector(disableMe) name:CNSplitViewToolbarItemsDisableNotification object:nil];
+	[nc addObserver:self selector:@selector(windowStatusChanged) name:NSWindowDidBecomeKeyNotification object:nil];
+	[nc addObserver:self selector:@selector(windowStatusChanged) name:NSWindowDidResignKeyNotification object:nil];
 }
 
-
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #pragma mark - Notifications
 
-- (void)enableMe
-{
-    [self setEnabled:YES];
+- (void)enableMe {
+	[self setEnabled:YES];
 }
 
-- (void)disableMe
-{
-    [self setEnabled:NO];
+- (void)disableMe {
+	[self setEnabled:NO];
 }
 
-- (void)windowStatusChanged
-{
-    [self setNeedsDisplay:YES];
+- (void)windowStatusChanged {
+	[self setNeedsDisplay:YES];
 }
 
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #pragma mark - Handling Context Menus
 
-- (void)mouseDown:(NSEvent *)theEvent
-{
-    if (self.itemContextMenu) {
-        NSEvent *leftMouseDown = [NSEvent mouseEventWithType:NSLeftMouseDown
-                                                    location:theEvent.locationInWindow
-                                               modifierFlags:0
-                                                   timestamp:0
-                                                windowNumber:[self.window windowNumber]
-                                                     context:nil
-                                                 eventNumber:0
-                                                  clickCount:theEvent.clickCount
-                                                    pressure:0];
-        [NSMenu popUpContextMenu:self.itemContextMenu withEvent:leftMouseDown forView:self];
-    }
+- (void)mouseDown:(NSEvent *)theEvent {
+	if (self.itemContextMenu) {
+		NSEvent *leftMouseDown = [NSEvent mouseEventWithType:NSLeftMouseDown
+		                                            location:theEvent.locationInWindow
+		                                       modifierFlags:0
+		                                           timestamp:0
+		                                        windowNumber:[self.window windowNumber]
+		                                             context:nil
+		                                         eventNumber:0
+		                                          clickCount:theEvent.clickCount
+		                                            pressure:0];
+		[NSMenu popUpContextMenu:self.itemContextMenu withEvent:leftMouseDown forView:self];
+	}
 
-    else {
-        [super mouseDown:theEvent];
-    }
+	else {
+		[super mouseDown:theEvent];
+	}
 }
 
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #pragma mark - Accessors
 
-- (void)setTitle:(NSString *)aString
-{
-    NSMutableParagraphStyle* textStyle = [[NSMutableParagraphStyle defaultParagraphStyle] mutableCopy];
-    [textStyle setAlignment: NSCenterTextAlignment];
+- (void)setTitle:(NSString *)aString {
+	NSMutableParagraphStyle *textStyle = [[NSMutableParagraphStyle defaultParagraphStyle] mutableCopy];
+	[textStyle setAlignment:NSCenterTextAlignment];
 
-    NSFont *font = [NSFont fontWithName:@"Helvetiva Neue" size:11.0];
+	NSFont *font = [NSFont fontWithName:@"Helvetiva Neue" size:11.0];
 
-    NSColor *textColor = [NSColor controlTextColor];
-    NSShadow* textShadow = [[NSShadow alloc] init];
-    [textShadow setShadowColor: [NSColor whiteColor]];
-    [textShadow setShadowOffset: NSMakeSize(0, -1)];
-    [textShadow setShadowBlurRadius: 0];
+	NSColor *textColor = [NSColor controlTextColor];
+	NSShadow *textShadow = [[NSShadow alloc] init];
+	[textShadow setShadowColor:[NSColor whiteColor]];
+	[textShadow setShadowOffset:NSMakeSize(0, -1)];
+	[textShadow setShadowBlurRadius:0];
 
-    NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:
-                                textShadow, NSShadowAttributeName,
-                                textColor,  NSForegroundColorAttributeName,
-                                textStyle,  NSParagraphStyleAttributeName,
-                                font,       NSFontAttributeName,
-                                nil];
-    NSAttributedString *attributedTitle = [[NSAttributedString alloc] initWithString:aString attributes:attributes];
-    [self setAttributedTitle:attributedTitle];
+	NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:
+	                            textShadow, NSShadowAttributeName,
+	                            textColor,  NSForegroundColorAttributeName,
+	                            textStyle,  NSParagraphStyleAttributeName,
+	                            font,       NSFontAttributeName,
+	                            nil];
+	NSAttributedString *attributedTitle = [[NSAttributedString alloc] initWithString:aString attributes:attributes];
+	[self setAttributedTitle:attributedTitle];
 }
 
-- (void)setImagePosition:(NSCellImagePosition)aPosition
-{
-    [(CNSplitViewToolbarButtonCell *)[self cell] setImagePosition:aPosition];
+- (void)setImagePosition:(NSCellImagePosition)aPosition {
+	[(CNSplitViewToolbarButtonCell *)[self cell] setImagePosition : aPosition];
 }
 
-- (void)setImageTemplate:(CNSplitViewToolbarButtonImageTemplate)theImageTemplate
-{
-    _imageTemplate = theImageTemplate;
-    switch (_imageTemplate) {
-        case CNSplitViewToolbarButtonImageTemplateAdd:           self.image = [NSImage imageNamed:NSImageNameAddTemplate]; break;
-        case CNSplitViewToolbarButtonImageTemplateRemove:        self.image = [NSImage imageNamed:NSImageNameRemoveTemplate]; break;
-        case CNSplitViewToolbarButtonImageTemplateQuickLook:     self.image = [NSImage imageNamed:NSImageNameQuickLookTemplate]; break;
-        case CNSplitViewToolbarButtonImageTemplateAction:        self.image = [NSImage imageNamed:NSImageNameActionTemplate]; break;
-        case CNSplitViewToolbarButtonImageTemplateShare:         self.image = [NSImage imageNamed:NSImageNameShareTemplate]; break;
-        case CNSplitViewToolbarButtonImageTemplateIconView:      self.image = [NSImage imageNamed:NSImageNameIconViewTemplate]; break;
-        case CNSplitViewToolbarButtonImageTemplateListView:      self.image = [NSImage imageNamed:NSImageNameListViewTemplate]; break;
-        case CNSplitViewToolbarButtonImageTemplateLockLocked:    self.image = [NSImage imageNamed:NSImageNameLockLockedTemplate]; break;
-        case CNSplitViewToolbarButtonImageTemplateLockUnlocked:  self.image = [NSImage imageNamed:NSImageNameLockUnlockedTemplate]; break;
-        case CNSplitViewToolbarButtonImageTemplateGoRight:       self.image = [NSImage imageNamed:NSImageNameGoRightTemplate]; break;
-        case CNSplitViewToolbarButtonImageTemplateGoLeft:        self.image = [NSImage imageNamed:NSImageNameGoLeftTemplate]; break;
-        case CNSplitViewToolbarButtonImageTemplateStopProgress:  self.image = [NSImage imageNamed:NSImageNameStopProgressTemplate]; break;
-        case CNSplitViewToolbarButtonImageTemplateRefresh:       self.image = [NSImage imageNamed:NSImageNameRefreshTemplate]; break;
-        default: break;
-    }
+- (void)setImageTemplate:(CNSplitViewToolbarButtonImageTemplate)theImageTemplate {
+	_imageTemplate = theImageTemplate;
+	switch (_imageTemplate) {
+		case CNSplitViewToolbarButtonImageTemplateAdd:           self.image = [NSImage imageNamed:NSImageNameAddTemplate]; break;
+		case CNSplitViewToolbarButtonImageTemplateRemove:        self.image = [NSImage imageNamed:NSImageNameRemoveTemplate]; break;
+		case CNSplitViewToolbarButtonImageTemplateQuickLook:     self.image = [NSImage imageNamed:NSImageNameQuickLookTemplate]; break;
+		case CNSplitViewToolbarButtonImageTemplateAction:        self.image = [NSImage imageNamed:NSImageNameActionTemplate]; break;
+		case CNSplitViewToolbarButtonImageTemplateShare:         self.image = [NSImage imageNamed:NSImageNameShareTemplate]; break;
+		case CNSplitViewToolbarButtonImageTemplateIconView:      self.image = [NSImage imageNamed:NSImageNameIconViewTemplate]; break;
+		case CNSplitViewToolbarButtonImageTemplateListView:      self.image = [NSImage imageNamed:NSImageNameListViewTemplate]; break;
+		case CNSplitViewToolbarButtonImageTemplateLockLocked:    self.image = [NSImage imageNamed:NSImageNameLockLockedTemplate]; break;
+		case CNSplitViewToolbarButtonImageTemplateLockUnlocked:  self.image = [NSImage imageNamed:NSImageNameLockUnlockedTemplate]; break;
+		case CNSplitViewToolbarButtonImageTemplateGoRight:       self.image = [NSImage imageNamed:NSImageNameGoRightTemplate]; break;
+		case CNSplitViewToolbarButtonImageTemplateGoLeft:        self.image = [NSImage imageNamed:NSImageNameGoLeftTemplate]; break;
+		case CNSplitViewToolbarButtonImageTemplateStopProgress:  self.image = [NSImage imageNamed:NSImageNameStopProgressTemplate]; break;
+		case CNSplitViewToolbarButtonImageTemplateRefresh:       self.image = [NSImage imageNamed:NSImageNameRefreshTemplate]; break;
+		default: break;
+	}
 }
 
 @end

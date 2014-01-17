@@ -14,25 +14,22 @@ static char toolbarItemAlignKey, toolbarItemWidthKey;
 
 @implementation NSView (CNSplitViewToolbar)
 
-- (CNSplitViewToolbarItemAlign)toolbarItemAlign
-{
-    NSNumber *number = objc_getAssociatedObject(self, &toolbarItemAlignKey);
-    return (CNSplitViewToolbarItemAlign)[number integerValue];
-}
-- (void)setToolbarItemAlign:(CNSplitViewToolbarItemAlign)theAlign
-{
-    objc_setAssociatedObject(self, &toolbarItemAlignKey, [NSNumber numberWithInteger:theAlign], OBJC_ASSOCIATION_RETAIN);
+- (CNSplitViewToolbarItemAlign)toolbarItemAlign {
+	NSNumber *number = objc_getAssociatedObject(self, &toolbarItemAlignKey);
+	return (CNSplitViewToolbarItemAlign)[number integerValue];
 }
 
-- (CGFloat)toolbarItemWidth
-{
-    NSNumber *number = objc_getAssociatedObject(self, &toolbarItemWidthKey);
-    return (CGFloat)[number doubleValue];
-}
-- (void)setToolbarItemWidth:(CGFloat)theItemWidth
-{
-    objc_setAssociatedObject(self, &toolbarItemWidthKey, [NSNumber numberWithDouble:theItemWidth], OBJC_ASSOCIATION_RETAIN);
+- (void)setToolbarItemAlign:(CNSplitViewToolbarItemAlign)theAlign {
+	objc_setAssociatedObject(self, &toolbarItemAlignKey, @(theAlign), OBJC_ASSOCIATION_RETAIN);
 }
 
+- (CGFloat)toolbarItemWidth {
+	NSNumber *number = objc_getAssociatedObject(self, &toolbarItemWidthKey);
+	return (CGFloat)[number doubleValue];
+}
+
+- (void)setToolbarItemWidth:(CGFloat)theItemWidth {
+	objc_setAssociatedObject(self, &toolbarItemWidthKey, @(theItemWidth), OBJC_ASSOCIATION_RETAIN);
+}
 
 @end
