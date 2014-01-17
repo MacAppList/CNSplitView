@@ -25,11 +25,13 @@ You have to replace the `$DIR_WHERE_YOUR_SUBMODULES_ARE_PLACED` with the real pa
 Download the entire project from Github via `git clone https://github.com/phranck/CNSplitView.git`, `cd` into the `CNSplitView` directory and drag the underyling `CNSplitView` directory to your Xcode project.
 
 
-##Usage
+##How to run the example
 To run the example application you have to *complete* this project by opening a terminal and `cd` into the directory where your `CNSplitView Example.xcodeproj` is. Here you will find a `Podfile`. Type `pod install` (or `pod update` if you have done it before) to install (or update) all dependencies. `CNSplitView` needs another component [`CNBaseView`](https://github.com/phranck/CNBaseView).
 
 After the creation of `CNSplitView Example.xcworkspace` you're done. Now you **only** have to use the workspace file!
 
+
+##Usage
 The usage of `CNSplitView` is quite simple. In Interfacebuilder just create a new window, grab a `NSSplitView` from the objects palette and drop it onto the content view of your window. Select the the size inspector and let it fill the container both horizontally and vertically. Then you select the identity inspector and set the class of this `NSSplitView` to `CNSplitView`. In Interfacebuilder you're done for that moment.
 
 On the code side you keep going that easy way. The code of the example application looks like this:
