@@ -26,6 +26,10 @@ Download the entire project from Github via `git clone https://github.com/phranc
 
 
 ##Usage
+To run the example application you have to *complete* this project by opening a terminal and `cd` into the directory where your `CNSplitView Example.xcodeproj` is. Here you will find a `Podfile`. Type `pod install` (or `pod update` if you have done it before) to get (or update) all dependencies. `CNSplitView` needs another component [`CNBaseView`](https://github.com/phranck/CNBaseView).
+
+After the creation of `CNSplitView Example.xcworkspace` you're done. Now you **only** have to use the workspace file!
+
 The usage of `CNSplitView` is quite simple. In Interfacebuilder just create a new window, grab a `NSSplitView` from the objects palette and drop it onto the content view of your window. Select the the size inspector and let it fill the container both horizontally and vertically. Then you select the identity inspector and set the class of this `NSSplitView` to `CNSplitView`. In Interfacebuilder you're done for that moment.
 
 On the code side you keep going that easy way. The code of the example application looks like this:
@@ -56,7 +60,7 @@ NSTextField *textField = [[NSTextField alloc] init];
 
 NSPopUpButton *popupButton = [[NSPopUpButton alloc] init];
 [popupButton setToolbarItemWidth:120];
-[popupButton addItemsWithTitles:@[ @"Foo...", @"Bar...", @"Yelly" ]];
+[popupButton addItemsWithTitles:@[@"Chelsea Manning...", @"Edward Snowden...", @"Aaron Swartz..."]];
 [[popupButton cell] setControlSize:NSSmallControlSize];
 
 NSSlider *slider = [[NSSlider alloc] init];
@@ -68,10 +72,11 @@ NSSlider *slider = [[NSSlider alloc] init];
 [toolbar addItem:button2 align:CNSplitViewToolbarItemAlignLeft];
 [toolbar addItem:button3 align:CNSplitViewToolbarItemAlignRight];
 [toolbar addItem:button4 align:CNSplitViewToolbarItemAlignRight];
+//[toolbar addItem:popupButton align:CNSplitViewToolbarItemAlignLeft];
 
 self.splitView.delegate = self;
 self.splitView.toolbarDelegate = self;
-[self.splitView attachToolbar:toolbar toSubViewAtIndex:0 onEdge:CNSplitViewToolbarEdgeBottom];
+[self.splitView attachToolbar:toolbar toSubViewAtIndex:attachedSubViewIndex onEdge:CNSplitViewToolbarEdgeBottom];
 ```
 
 

@@ -36,6 +36,7 @@
 		FDDC63111695B4A900BE7A82 /* CNSplitViewToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDC630A1695B4A900BE7A82 /* CNSplitViewToolbar.m */; };
 		FDDC63121695B4A900BE7A82 /* CNSplitViewToolbarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDC630C1695B4A900BE7A82 /* CNSplitViewToolbarButton.m */; };
 		FDDC63131695B4A900BE7A82 /* CNSplitViewToolbarButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDC630E1695B4A900BE7A82 /* CNSplitViewToolbarButtonCell.m */; };
+		FDE1E00F1889412900F06E33 /* CNToolbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE1E00E1889412900F06E33 /* CNToolbarView.m */; };
 		FDEF7F78188885A1007D7A19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDEF7F77188885A1007D7A19 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,8 @@
 		FDDC630C1695B4A900BE7A82 /* CNSplitViewToolbarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSplitViewToolbarButton.m; sourceTree = "<group>"; };
 		FDDC630D1695B4A900BE7A82 /* CNSplitViewToolbarButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSplitViewToolbarButtonCell.h; sourceTree = "<group>"; };
 		FDDC630E1695B4A900BE7A82 /* CNSplitViewToolbarButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSplitViewToolbarButtonCell.m; sourceTree = "<group>"; };
+		FDE1E00D1889412900F06E33 /* CNToolbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNToolbarView.h; sourceTree = "<group>"; };
+		FDE1E00E1889412900F06E33 /* CNToolbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNToolbarView.m; sourceTree = "<group>"; };
 		FDEF7F77188885A1007D7A19 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "CNSplitView Example/Images.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +139,8 @@
 			children = (
 				FDDC62E11695B39F00BE7A82 /* CNAppDelegate.h */,
 				FDDC62E21695B39F00BE7A82 /* CNAppDelegate.m */,
+				FDE1E00D1889412900F06E33 /* CNToolbarView.h */,
+				FDE1E00E1889412900F06E33 /* CNToolbarView.m */,
 				FDDC62E41695B39F00BE7A82 /* MainMenu.xib */,
 			);
 			path = "CNSplitView Example";
@@ -299,6 +304,7 @@
 				FDDC62DC1695B39F00BE7A82 /* main.m in Sources */,
 				FDDC62E31695B39F00BE7A82 /* CNAppDelegate.m in Sources */,
 				FDDC630F1695B4A900BE7A82 /* CNSplitView.m in Sources */,
+				FDE1E00F1889412900F06E33 /* CNToolbarView.m in Sources */,
 				FDDC63111695B4A900BE7A82 /* CNSplitViewToolbar.m in Sources */,
 				FDDC63121695B4A900BE7A82 /* CNSplitViewToolbarButton.m in Sources */,
 				FDDC63131695B4A900BE7A82 /* CNSplitViewToolbarButtonCell.m in Sources */,
