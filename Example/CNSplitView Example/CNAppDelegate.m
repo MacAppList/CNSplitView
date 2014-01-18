@@ -28,7 +28,6 @@ static NSUInteger attachedSubViewIndex = 0;
 	self.secondView.iconVerticalOffset = 70;
 
 	useAnimations = NO;
-	toolbar = [[CNSplitViewToolbar alloc] init];
 
 	NSMenu *contextMenu = [[NSMenu alloc] init];
 	[contextMenu addItemWithTitle:@"Add new Item" action:@selector(contextMenuItemSelection:) keyEquivalent:@""];
@@ -63,6 +62,7 @@ static NSUInteger attachedSubViewIndex = 0;
 	[[slider cell] setControlSize:NSSmallControlSize];
 
 
+	toolbar = [[CNSplitViewToolbar alloc] init];
 	[toolbar addItem:button1 align:CNSplitViewToolbarItemAlignLeft];
 	[toolbar addItem:button2 align:CNSplitViewToolbarItemAlignLeft];
 	[toolbar addItem:button3 align:CNSplitViewToolbarItemAlignRight];

@@ -96,11 +96,11 @@ NSString *CNUserInfoEdgeKey = @"edge";
 
 #pragma mark - Configuring & Handling Toolbars
 
-- (void)attachToolbar:(CNSplitViewToolbar *)theToolbar toSubViewAtIndex:(NSUInteger)dividerIndex onEdge:(CNSplitViewToolbarEdge)anchorEdge {
+- (void)attachToolbar:(CNSplitViewToolbar *)theToolbar toSubViewAtIndex:(NSUInteger)index onEdge:(CNSplitViewToolbarEdge)anchorEdge {
 	/// via notification we inject a refernce to ourself into the toolbar
 	[[NSNotificationCenter defaultCenter] postNotificationName:CNSplitViewInjectReferenceNotification object:self];
 
-	_attachedSubviewIndex = dividerIndex;
+	_attachedSubviewIndex = index;
 	_anchoredView = [[self subviews] objectAtIndex:_attachedSubviewIndex];
 	[_anchoredView setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
 
@@ -137,7 +137,7 @@ NSString *CNUserInfoEdgeKey = @"edge";
 	[self splitView:self willShowToolbar:_toolbar onEdge:_toolbar.anchorEdge];
 
 	[NSAnimationContext runAnimationGroup: ^(NSAnimationContext *context) {
-	    context.duration = (animated ? kDefaultAnimationDuration : 0.01);
+	    context.duration = (animated ? kDefaultAnimationDuration : 0.0);
 	    context.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
 
 	    posY = (_toolbar.anchorEdge == CNSplitViewToolbarEdgeBottom ? NSMinY(_anchoredView.frame) + _toolbar.height : 0);
@@ -172,7 +172,7 @@ NSString *CNUserInfoEdgeKey = @"edge";
 	[self splitView:self willHideToolbar:_toolbar onEdge:_toolbar.anchorEdge];
 
 	[NSAnimationContext runAnimationGroup: ^(NSAnimationContext *context) {
-	    context.duration = (animated ? kDefaultAnimationDuration : 0.01);
+	    context.duration = (animated ? kDefaultAnimationDuration : 0.0);
 	    context.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
 
 	    posY = (_toolbar.anchorEdge == CNSplitViewToolbarEdgeBottom ? NSMinY(_anchoredView.frame) - _toolbar.height : 0);

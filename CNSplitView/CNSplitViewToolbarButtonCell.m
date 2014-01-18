@@ -44,8 +44,8 @@ static CGFloat kDefaultImageFraction, kDefaultImageEnabledFraction, kDefaultImag
 + (void)initialize {
 	gradientStartColor = [NSColor colorWithCalibratedRed:0.95 green:0.95 blue:0.95 alpha:1.0];
 	gradientEndColor = [NSColor colorWithCalibratedRed:0.75 green:0.75 blue:0.75 alpha:1.0];
-	btnHighlightGradient = [[NSGradient alloc] initWithStartingColor:[NSColor colorWithCalibratedRed:0.78 green:0.78 blue:0.78 alpha:1.0]
-	                                                     endingColor:[NSColor colorWithCalibratedRed:0.90 green:0.90 blue:0.90 alpha:1.0]];
+	btnHighlightGradient = [[NSGradient alloc] initWithStartingColor:gradientStartColor
+	                                                     endingColor:[NSColor colorWithCalibratedWhite:0.664 alpha:1.000]];
 	kDefaultImageFraction = 0.0;
 	kDefaultImageEnabledFraction = 1.0;
 	kDefaultImageDisabledFraction = 0.42;
@@ -80,8 +80,14 @@ static CGFloat kDefaultImageFraction, kDefaultImageEnabledFraction, kDefaultImag
 - (void)drawBezelWithFrame:(NSRect)cellFrame inView:(NSView *)controlView {
 	NSBezierPath *buttonPath = [NSBezierPath bezierPathWithRect:cellFrame];
 	switch (self.isHighlighted) {
-		case YES:[btnHighlightGradient drawInBezierPath:buttonPath angle:90]; break;
-		case NO:[btnGradient drawInBezierPath:buttonPath angle:90]; break;
+		case YES: {
+            [btnHighlightGradient drawInBezierPath:buttonPath angle:90];
+            break;
+        }
+
+		case NO:
+            [btnGradient drawInBezierPath:buttonPath angle:90];
+            break;
 	}
 }
 
@@ -118,8 +124,9 @@ static CGFloat kDefaultImageFraction, kDefaultImageEnabledFraction, kDefaultImag
 
 
 	if (self.isEnabled) {
-		if (self.isHighlighted)
+		if (self.isHighlighted) {
 			imageRect.origin = NSMakePoint(NSMinX(imageRect), NSMinY(imageRect) + 1);
+        }
 		[image drawInRect:imageRect fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:kDefaultImageFraction respectFlipped:YES hints:nil];
 	}
 	else {
