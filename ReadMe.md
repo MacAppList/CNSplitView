@@ -1,3 +1,6 @@
+[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=phranck&url=https://github.com/phranck/CNSplitView&title=CNSplitView&tags=github&category=software)
+
+
 ##Overview
 `CNSplitView` is an feature enhanced derivative of `NSSplitView`. It has support for sticky top or bottom toolbars for each of its subviews. You can configure `CNSplitView` to add toolbars with buttons and/or drag handles, you can define the orientation of each button inside the toolbar or center it all.
 
@@ -97,3 +100,10 @@ You can find the complete reference [here](http://CNSplitView.cocoanaut.com/docu
 
 ##License
 This software is published under the [MIT License](http://cocoanaut.mit-license.org).
+
+
+##Software that uses CNSplitView
+If you like this component and if you're using it in your own software so please let me know. I'll give you a mention and set a link to your website (or the Mac App Store, if it exists).
+
+`CNSplitView` is used by this software:
+* **[BezierCode](http://www.beziercode.com)** - BezierCode is an intuitive vector drawing that generate  Objective C code.
