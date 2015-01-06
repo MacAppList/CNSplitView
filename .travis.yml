@@ -1,0 +1,3 @@
+language: objective-c
+xcode_project: 'Example/CNSplitView Example.xcodeproj'
+xcode_scheme: 'CNSplitView Example'

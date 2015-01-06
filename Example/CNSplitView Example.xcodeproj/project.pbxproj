@@ -1,482 +1,1137 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXAggregateTarget section */
-		FDDC62EC1695B3E800BE7A82 /* Documentation */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = FDDC62ED1695B3E800BE7A82 /* Build configuration list for PBXAggregateTarget "Documentation" */;
-			buildPhases = (
-				FDDC62F01695B3F100BE7A82 /* Generate Appledoc */,
-			);
-			dependencies = (
-			);
-			name = Documentation;
-			productName = Documentation;
-		};
-/* End PBXAggregateTarget section */
-
-/* Begin PBXBuildFile section */
-		D94FC70D883B402ABA28E06B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C38552CD5445649CB82739 /* libPods.a */; };
-		FD4DEBBD16BBECF900CE120A /* CNSplitViewDraggingHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4DEBBC16BBECF900CE120A /* CNSplitViewDraggingHandle.m */; };
-		FD7730FE16D45686007F3E17 /* NSView+CNSplitViewToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7730FD16D45686007F3E17 /* NSView+CNSplitViewToolbar.m */; };
-		FD7F866716A047A500D7BA7C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7F866616A047A500D7BA7C /* QuartzCore.framework */; };
-		FDD47B3716B4BF7600ADAB76 /* SplitLeaf-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FDD47B3616B4BF7600ADAB76 /* SplitLeaf-Icon.png */; };
-		FDDC62D01695B39F00BE7A82 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDC62CF1695B39F00BE7A82 /* Cocoa.framework */; };
-		FDDC62DA1695B39F00BE7A82 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDDC62D81695B39F00BE7A82 /* InfoPlist.strings */; };
-		FDDC62DC1695B39F00BE7A82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDC62DB1695B39F00BE7A82 /* main.m */; };
-		FDDC62E01695B39F00BE7A82 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FDDC62DE1695B39F00BE7A82 /* Credits.rtf */; };
-		FDDC62E31695B39F00BE7A82 /* CNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDC62E21695B39F00BE7A82 /* CNAppDelegate.m */; };
-		FDDC62E61695B39F00BE7A82 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDDC62E41695B39F00BE7A82 /* MainMenu.xib */; };
-		FDDC630F1695B4A900BE7A82 /* CNSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDC63051695B4A900BE7A82 /* CNSplitView.m */; };
-		FDDC63111695B4A900BE7A82 /* CNSplitViewToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDC630A1695B4A900BE7A82 /* CNSplitViewToolbar.m */; };
-		FDDC63121695B4A900BE7A82 /* CNSplitViewToolbarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDC630C1695B4A900BE7A82 /* CNSplitViewToolbarButton.m */; };
-		FDDC63131695B4A900BE7A82 /* CNSplitViewToolbarButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDC630E1695B4A900BE7A82 /* CNSplitViewToolbarButtonCell.m */; };
-		FDE1E00F1889412900F06E33 /* CNToolbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE1E00E1889412900F06E33 /* CNToolbarView.m */; };
-		FDEF7F78188885A1007D7A19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDEF7F77188885A1007D7A19 /* Images.xcassets */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXFileReference section */
-		61C38552CD5445649CB82739 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEDF412D6B4F4F3291DC8BCD /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		FD4DEBBB16BBECF900CE120A /* CNSplitViewDraggingHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSplitViewDraggingHandle.h; sourceTree = "<group>"; };
-		FD4DEBBC16BBECF900CE120A /* CNSplitViewDraggingHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSplitViewDraggingHandle.m; sourceTree = "<group>"; };
-		FD733F9C16BC8A1E0008C473 /* CNSplitViewToolbarDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNSplitViewToolbarDelegate.h; sourceTree = "<group>"; };
-		FD7730FC16D45686007F3E17 /* NSView+CNSplitViewToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+CNSplitViewToolbar.h"; sourceTree = "<group>"; };
-		FD7730FD16D45686007F3E17 /* NSView+CNSplitViewToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+CNSplitViewToolbar.m"; sourceTree = "<group>"; };
-		FD7F866616A047A500D7BA7C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		FD9178E616B2D4EF0026E4D9 /* CNLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNLog.h; sourceTree = "<group>"; };
-		FDD47B3616B4BF7600ADAB76 /* SplitLeaf-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SplitLeaf-Icon.png"; sourceTree = "<group>"; };
-		FDDC62CC1695B39F00BE7A82 /* CNSplitView Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CNSplitView Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDDC62CF1695B39F00BE7A82 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		FDDC62D21695B39F00BE7A82 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		FDDC62D31695B39F00BE7A82 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		FDDC62D41695B39F00BE7A82 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		FDDC62D71695B39F00BE7A82 /* CNSplitView Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CNSplitView Example-Info.plist"; sourceTree = "<group>"; };
-		FDDC62D91695B39F00BE7A82 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FDDC62DB1695B39F00BE7A82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FDDC62DD1695B39F00BE7A82 /* CNSplitView Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CNSplitView Example-Prefix.pch"; sourceTree = "<group>"; };
-		FDDC62DF1695B39F00BE7A82 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		FDDC62E11695B39F00BE7A82 /* CNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNAppDelegate.h; sourceTree = "<group>"; };
-		FDDC62E21695B39F00BE7A82 /* CNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNAppDelegate.m; sourceTree = "<group>"; };
-		FDDC62E51695B39F00BE7A82 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		FDDC63041695B4A900BE7A82 /* CNSplitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSplitView.h; sourceTree = "<group>"; };
-		FDDC63051695B4A900BE7A82 /* CNSplitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSplitView.m; sourceTree = "<group>"; };
-		FDDC63061695B4A900BE7A82 /* CNSplitViewDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSplitViewDefinitions.h; sourceTree = "<group>"; };
-		FDDC63091695B4A900BE7A82 /* CNSplitViewToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSplitViewToolbar.h; sourceTree = "<group>"; };
-		FDDC630A1695B4A900BE7A82 /* CNSplitViewToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSplitViewToolbar.m; sourceTree = "<group>"; };
-		FDDC630B1695B4A900BE7A82 /* CNSplitViewToolbarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSplitViewToolbarButton.h; sourceTree = "<group>"; };
-		FDDC630C1695B4A900BE7A82 /* CNSplitViewToolbarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSplitViewToolbarButton.m; sourceTree = "<group>"; };
-		FDDC630D1695B4A900BE7A82 /* CNSplitViewToolbarButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSplitViewToolbarButtonCell.h; sourceTree = "<group>"; };
-		FDDC630E1695B4A900BE7A82 /* CNSplitViewToolbarButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSplitViewToolbarButtonCell.m; sourceTree = "<group>"; };
-		FDE1E00D1889412900F06E33 /* CNToolbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNToolbarView.h; sourceTree = "<group>"; };
-		FDE1E00E1889412900F06E33 /* CNToolbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNToolbarView.m; sourceTree = "<group>"; };
-		FDEF7F77188885A1007D7A19 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "CNSplitView Example/Images.xcassets"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		FDDC62C91695B39F00BE7A82 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FD7F866716A047A500D7BA7C /* QuartzCore.framework in Frameworks */,
-				FDDC62D01695B39F00BE7A82 /* Cocoa.framework in Frameworks */,
-				D94FC70D883B402ABA28E06B /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		FDDC62C31695B39F00BE7A82 = {
-			isa = PBXGroup;
-			children = (
-				FDDC62D51695B39F00BE7A82 /* CNSplitView Example */,
-				FDDC62D61695B39F00BE7A82 /* Supporting Files */,
-				FDDC63031695B4A900BE7A82 /* CNSplitView */,
-				FDEF7F77188885A1007D7A19 /* Images.xcassets */,
-				FDDC62CE1695B39F00BE7A82 /* Frameworks */,
-				FDDC62CD1695B39F00BE7A82 /* Products */,
-				CEDF412D6B4F4F3291DC8BCD /* Pods.xcconfig */,
-			);
-			sourceTree = "<group>";
-		};
-		FDDC62CD1695B39F00BE7A82 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FDDC62CC1695B39F00BE7A82 /* CNSplitView Example.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		FDDC62CE1695B39F00BE7A82 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FD7F866616A047A500D7BA7C /* QuartzCore.framework */,
-				FDDC62CF1695B39F00BE7A82 /* Cocoa.framework */,
-				FDDC62D11695B39F00BE7A82 /* Other Frameworks */,
-				61C38552CD5445649CB82739 /* libPods.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FDDC62D11695B39F00BE7A82 /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FDDC62D21695B39F00BE7A82 /* AppKit.framework */,
-				FDDC62D31695B39F00BE7A82 /* CoreData.framework */,
-				FDDC62D41695B39F00BE7A82 /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
-		FDDC62D51695B39F00BE7A82 /* CNSplitView Example */ = {
-			isa = PBXGroup;
-			children = (
-				FDDC62E11695B39F00BE7A82 /* CNAppDelegate.h */,
-				FDDC62E21695B39F00BE7A82 /* CNAppDelegate.m */,
-				FDE1E00D1889412900F06E33 /* CNToolbarView.h */,
-				FDE1E00E1889412900F06E33 /* CNToolbarView.m */,
-				FDDC62E41695B39F00BE7A82 /* MainMenu.xib */,
-			);
-			path = "CNSplitView Example";
-			sourceTree = "<group>";
-		};
-		FDDC62D61695B39F00BE7A82 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				FD9178E616B2D4EF0026E4D9 /* CNLog.h */,
-				FDDC62D71695B39F00BE7A82 /* CNSplitView Example-Info.plist */,
-				FDDC62D81695B39F00BE7A82 /* InfoPlist.strings */,
-				FDDC62DB1695B39F00BE7A82 /* main.m */,
-				FDDC62DD1695B39F00BE7A82 /* CNSplitView Example-Prefix.pch */,
-				FDDC62DE1695B39F00BE7A82 /* Credits.rtf */,
-				FDD47B3616B4BF7600ADAB76 /* SplitLeaf-Icon.png */,
-			);
-			name = "Supporting Files";
-			path = "CNSplitView Example";
-			sourceTree = "<group>";
-		};
-		FDDC63031695B4A900BE7A82 /* CNSplitView */ = {
-			isa = PBXGroup;
-			children = (
-				FDDC63061695B4A900BE7A82 /* CNSplitViewDefinitions.h */,
-				FDDC63041695B4A900BE7A82 /* CNSplitView.h */,
-				FDDC63051695B4A900BE7A82 /* CNSplitView.m */,
-				FD4DEBBB16BBECF900CE120A /* CNSplitViewDraggingHandle.h */,
-				FD4DEBBC16BBECF900CE120A /* CNSplitViewDraggingHandle.m */,
-				FD733F9C16BC8A1E0008C473 /* CNSplitViewToolbarDelegate.h */,
-				FDDC63091695B4A900BE7A82 /* CNSplitViewToolbar.h */,
-				FDDC630A1695B4A900BE7A82 /* CNSplitViewToolbar.m */,
-				FDDC630B1695B4A900BE7A82 /* CNSplitViewToolbarButton.h */,
-				FDDC630C1695B4A900BE7A82 /* CNSplitViewToolbarButton.m */,
-				FDDC630D1695B4A900BE7A82 /* CNSplitViewToolbarButtonCell.h */,
-				FDDC630E1695B4A900BE7A82 /* CNSplitViewToolbarButtonCell.m */,
-				FD7730FC16D45686007F3E17 /* NSView+CNSplitViewToolbar.h */,
-				FD7730FD16D45686007F3E17 /* NSView+CNSplitViewToolbar.m */,
-			);
-			name = CNSplitView;
-			path = ../CNSplitView;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		FDDC62CB1695B39F00BE7A82 /* CNSplitView Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FDDC62E91695B39F00BE7A82 /* Build configuration list for PBXNativeTarget "CNSplitView Example" */;
-			buildPhases = (
-				621F0021C0044CC2A572AAAA /* Check Pods Manifest.lock */,
-				FDDC62C81695B39F00BE7A82 /* Sources */,
-				FDDC62C91695B39F00BE7A82 /* Frameworks */,
-				FDDC62CA1695B39F00BE7A82 /* Resources */,
-				A59BDF29E120495798C7EC07 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "CNSplitView Example";
-			productName = "CNSplitView Example";
-			productReference = FDDC62CC1695B39F00BE7A82 /* CNSplitView Example.app */;
-			productType = "com.apple.product-type.application";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		FDDC62C41695B39F00BE7A82 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = CN;
-				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = "cocoa:naut";
-			};
-			buildConfigurationList = FDDC62C71695B39F00BE7A82 /* Build configuration list for PBXProject "CNSplitView Example" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = FDDC62C31695B39F00BE7A82;
-			productRefGroup = FDDC62CD1695B39F00BE7A82 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				FDDC62CB1695B39F00BE7A82 /* CNSplitView Example */,
-				FDDC62EC1695B3E800BE7A82 /* Documentation */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		FDDC62CA1695B39F00BE7A82 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FDDC62DA1695B39F00BE7A82 /* InfoPlist.strings in Resources */,
-				FDDC62E01695B39F00BE7A82 /* Credits.rtf in Resources */,
-				FDDC62E61695B39F00BE7A82 /* MainMenu.xib in Resources */,
-				FDEF7F78188885A1007D7A19 /* Images.xcassets in Resources */,
-				FDD47B3716B4BF7600ADAB76 /* SplitLeaf-Icon.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		621F0021C0044CC2A572AAAA /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A59BDF29E120495798C7EC07 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FDDC62F01695B3F100BE7A82 /* Generate Appledoc */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Generate Appledoc";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/bash;
-			shellScript = "cd ../\n`which appledoc` .\nDEPLOY=\"./bin/deployDoc.sh\"\nif [ -f \"${DEPLOY}\" ]; then\n${DEPLOY}\nfi\nexit 0";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		FDDC62C81695B39F00BE7A82 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FDDC62DC1695B39F00BE7A82 /* main.m in Sources */,
-				FDDC62E31695B39F00BE7A82 /* CNAppDelegate.m in Sources */,
-				FDDC630F1695B4A900BE7A82 /* CNSplitView.m in Sources */,
-				FDE1E00F1889412900F06E33 /* CNToolbarView.m in Sources */,
-				FDDC63111695B4A900BE7A82 /* CNSplitViewToolbar.m in Sources */,
-				FDDC63121695B4A900BE7A82 /* CNSplitViewToolbarButton.m in Sources */,
-				FDDC63131695B4A900BE7A82 /* CNSplitViewToolbarButtonCell.m in Sources */,
-				FD4DEBBD16BBECF900CE120A /* CNSplitViewDraggingHandle.m in Sources */,
-				FD7730FE16D45686007F3E17 /* NSView+CNSplitViewToolbar.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		FDDC62D81695B39F00BE7A82 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FDDC62D91695B39F00BE7A82 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		FDDC62DE1695B39F00BE7A82 /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FDDC62DF1695B39F00BE7A82 /* en */,
-			);
-			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		FDDC62E41695B39F00BE7A82 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FDDC62E51695B39F00BE7A82 /* en */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		FDDC62E71695B39F00BE7A82 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		FDDC62E81695B39F00BE7A82 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		FDDC62EA1695B39F00BE7A82 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEDF412D6B4F4F3291DC8BCD /* Pods.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CNSplitView Example/CNSplitView Example-Prefix.pch";
-				INFOPLIST_FILE = "CNSplitView Example/CNSplitView Example-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		FDDC62EB1695B39F00BE7A82 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEDF412D6B4F4F3291DC8BCD /* Pods.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CNSplitView Example/CNSplitView Example-Prefix.pch";
-				INFOPLIST_FILE = "CNSplitView Example/CNSplitView Example-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		FDDC62EE1695B3E800BE7A82 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		FDDC62EF1695B3E800BE7A82 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		FDDC62C71695B39F00BE7A82 /* Build configuration list for PBXProject "CNSplitView Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FDDC62E71695B39F00BE7A82 /* Debug */,
-				FDDC62E81695B39F00BE7A82 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FDDC62E91695B39F00BE7A82 /* Build configuration list for PBXNativeTarget "CNSplitView Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FDDC62EA1695B39F00BE7A82 /* Debug */,
-				FDDC62EB1695B39F00BE7A82 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FDDC62ED1695B3E800BE7A82 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FDDC62EE1695B3E800BE7A82 /* Debug */,
-				FDDC62EF1695B3E800BE7A82 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = FDDC62C41695B39F00BE7A82 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>1352FD9B452F93F39F5C8CE1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>17F92AD3ED2BE6C47C5B4727</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>61C38552CD5445649CB82739</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>621F0021C0044CC2A572AAAA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>A59BDF29E120495798C7EC07</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>D94FC70D883B402ABA28E06B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>61C38552CD5445649CB82739</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F70D10C69F944D4641284D15</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>17F92AD3ED2BE6C47C5B4727</string>
+				<string>1352FD9B452F93F39F5C8CE1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FD4DEBBB16BBECF900CE120A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CNSplitViewDraggingHandle.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FD4DEBBC16BBECF900CE120A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>CNSplitViewDraggingHandle.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FD4DEBBD16BBECF900CE120A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FD4DEBBC16BBECF900CE120A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FD733F9C16BC8A1E0008C473</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CNSplitViewToolbarDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FD7730FC16D45686007F3E17</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>NSView+CNSplitViewToolbar.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FD7730FD16D45686007F3E17</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>NSView+CNSplitViewToolbar.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FD7730FE16D45686007F3E17</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FD7730FD16D45686007F3E17</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FD7F866616A047A500D7BA7C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>QuartzCore.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/QuartzCore.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>FD7F866716A047A500D7BA7C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FD7F866616A047A500D7BA7C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FD9178E616B2D4EF0026E4D9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CNLog.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDD47B3616B4BF7600ADAB76</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>SplitLeaf-Icon.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDD47B3716B4BF7600ADAB76</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FDD47B3616B4BF7600ADAB76</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FDDC62C31695B39F00BE7A82</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FDDC62D51695B39F00BE7A82</string>
+				<string>FDDC62D61695B39F00BE7A82</string>
+				<string>FDDC63031695B4A900BE7A82</string>
+				<string>FDEF7F77188885A1007D7A19</string>
+				<string>FDDC62CE1695B39F00BE7A82</string>
+				<string>FDDC62CD1695B39F00BE7A82</string>
+				<string>F70D10C69F944D4641284D15</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDDC62C41695B39F00BE7A82</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>CN</string>
+				<key>LastUpgradeCheck</key>
+				<string>0500</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>cocoa:naut</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>FDDC62C71695B39F00BE7A82</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>FDDC62C31695B39F00BE7A82</string>
+			<key>productRefGroup</key>
+			<string>FDDC62CD1695B39F00BE7A82</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>FDDC62CB1695B39F00BE7A82</string>
+			</array>
+		</dict>
+		<key>FDDC62C71695B39F00BE7A82</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>FDDC62E71695B39F00BE7A82</string>
+				<string>FDDC62E81695B39F00BE7A82</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>FDDC62C81695B39F00BE7A82</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FDDC62DC1695B39F00BE7A82</string>
+				<string>FDDC62E31695B39F00BE7A82</string>
+				<string>FDDC630F1695B4A900BE7A82</string>
+				<string>FDE1E00F1889412900F06E33</string>
+				<string>FDDC63111695B4A900BE7A82</string>
+				<string>FDDC63121695B4A900BE7A82</string>
+				<string>FDDC63131695B4A900BE7A82</string>
+				<string>FD4DEBBD16BBECF900CE120A</string>
+				<string>FD7730FE16D45686007F3E17</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>FDDC62C91695B39F00BE7A82</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FD7F866716A047A500D7BA7C</string>
+				<string>FDDC62D01695B39F00BE7A82</string>
+				<string>D94FC70D883B402ABA28E06B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>FDDC62CA1695B39F00BE7A82</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FDDC62DA1695B39F00BE7A82</string>
+				<string>FDDC62E01695B39F00BE7A82</string>
+				<string>FDDC62E61695B39F00BE7A82</string>
+				<string>FDEF7F78188885A1007D7A19</string>
+				<string>FDD47B3716B4BF7600ADAB76</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>FDDC62CB1695B39F00BE7A82</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>FDDC62E91695B39F00BE7A82</string>
+			<key>buildPhases</key>
+			<array>
+				<string>621F0021C0044CC2A572AAAA</string>
+				<string>FDDC62C81695B39F00BE7A82</string>
+				<string>FDDC62C91695B39F00BE7A82</string>
+				<string>FDDC62CA1695B39F00BE7A82</string>
+				<string>A59BDF29E120495798C7EC07</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>CNSplitView Example</string>
+			<key>productName</key>
+			<string>CNSplitView Example</string>
+			<key>productReference</key>
+			<string>FDDC62CC1695B39F00BE7A82</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>FDDC62CC1695B39F00BE7A82</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>CNSplitView Example.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>FDDC62CD1695B39F00BE7A82</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FDDC62CC1695B39F00BE7A82</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDDC62CE1695B39F00BE7A82</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FD7F866616A047A500D7BA7C</string>
+				<string>FDDC62CF1695B39F00BE7A82</string>
+				<string>FDDC62D11695B39F00BE7A82</string>
+				<string>61C38552CD5445649CB82739</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDDC62CF1695B39F00BE7A82</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Cocoa.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Cocoa.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>FDDC62D01695B39F00BE7A82</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FDDC62CF1695B39F00BE7A82</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FDDC62D11695B39F00BE7A82</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FDDC62D21695B39F00BE7A82</string>
+				<string>FDDC62D31695B39F00BE7A82</string>
+				<string>FDDC62D41695B39F00BE7A82</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Other Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDDC62D21695B39F00BE7A82</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>AppKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/AppKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>FDDC62D31695B39F00BE7A82</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreData.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreData.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>FDDC62D41695B39F00BE7A82</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>FDDC62D51695B39F00BE7A82</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FDDC62E11695B39F00BE7A82</string>
+				<string>FDDC62E21695B39F00BE7A82</string>
+				<string>FDE1E00D1889412900F06E33</string>
+				<string>FDE1E00E1889412900F06E33</string>
+				<string>FDDC62E41695B39F00BE7A82</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>CNSplitView Example</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDDC62D61695B39F00BE7A82</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FD9178E616B2D4EF0026E4D9</string>
+				<string>FDDC62D71695B39F00BE7A82</string>
+				<string>FDDC62D81695B39F00BE7A82</string>
+				<string>FDDC62DB1695B39F00BE7A82</string>
+				<string>FDDC62DD1695B39F00BE7A82</string>
+				<string>FDDC62DE1695B39F00BE7A82</string>
+				<string>FDD47B3616B4BF7600ADAB76</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>path</key>
+			<string>CNSplitView Example</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDDC62D71695B39F00BE7A82</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>CNSplitView Example-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDDC62D81695B39F00BE7A82</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FDDC62D91695B39F00BE7A82</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDDC62D91695B39F00BE7A82</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDDC62DA1695B39F00BE7A82</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FDDC62D81695B39F00BE7A82</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FDDC62DB1695B39F00BE7A82</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDDC62DC1695B39F00BE7A82</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FDDC62DB1695B39F00BE7A82</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FDDC62DD1695B39F00BE7A82</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CNSplitView Example-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDDC62DE1695B39F00BE7A82</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FDDC62DF1695B39F00BE7A82</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Credits.rtf</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDDC62DF1695B39F00BE7A82</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.rtf</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/Credits.rtf</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDDC62E01695B39F00BE7A82</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FDDC62DE1695B39F00BE7A82</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FDDC62E11695B39F00BE7A82</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CNAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDDC62E21695B39F00BE7A82</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>CNAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDDC62E31695B39F00BE7A82</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FDDC62E21695B39F00BE7A82</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FDDC62E41695B39F00BE7A82</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FDDC62E51695B39F00BE7A82</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>MainMenu.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDDC62E51695B39F00BE7A82</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/MainMenu.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDDC62E61695B39F00BE7A82</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FDDC62E41695B39F00BE7A82</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FDDC62E71695B39F00BE7A82</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_ENABLE_OBJC_EXCEPTIONS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.8</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>macosx</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>FDDC62E81695B39F00BE7A82</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_ENABLE_OBJC_EXCEPTIONS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.8</string>
+				<key>SDKROOT</key>
+				<string>macosx</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>FDDC62E91695B39F00BE7A82</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>FDDC62EA1695B39F00BE7A82</string>
+				<string>FDDC62EB1695B39F00BE7A82</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>FDDC62EA1695B39F00BE7A82</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>17F92AD3ED2BE6C47C5B4727</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>CNSplitView Example/CNSplitView Example-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>CNSplitView Example/CNSplitView Example-Info.plist</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.8</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>FDDC62EB1695B39F00BE7A82</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>1352FD9B452F93F39F5C8CE1</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>CNSplitView Example/CNSplitView Example-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>CNSplitView Example/CNSplitView Example-Info.plist</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.8</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>FDDC63031695B4A900BE7A82</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FDDC63061695B4A900BE7A82</string>
+				<string>FDDC63041695B4A900BE7A82</string>
+				<string>FDDC63051695B4A900BE7A82</string>
+				<string>FD4DEBBB16BBECF900CE120A</string>
+				<string>FD4DEBBC16BBECF900CE120A</string>
+				<string>FD733F9C16BC8A1E0008C473</string>
+				<string>FDDC63091695B4A900BE7A82</string>
+				<string>FDDC630A1695B4A900BE7A82</string>
+				<string>FDDC630B1695B4A900BE7A82</string>
+				<string>FDDC630C1695B4A900BE7A82</string>
+				<string>FDDC630D1695B4A900BE7A82</string>
+				<string>FDDC630E1695B4A900BE7A82</string>
+				<string>FD7730FC16D45686007F3E17</string>
+				<string>FD7730FD16D45686007F3E17</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>CNSplitView</string>
+			<key>path</key>
+			<string>../CNSplitView</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDDC63041695B4A900BE7A82</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CNSplitView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDDC63051695B4A900BE7A82</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>CNSplitView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDDC63061695B4A900BE7A82</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CNSplitViewDefinitions.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDDC63091695B4A900BE7A82</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CNSplitViewToolbar.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDDC630A1695B4A900BE7A82</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>CNSplitViewToolbar.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDDC630B1695B4A900BE7A82</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CNSplitViewToolbarButton.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDDC630C1695B4A900BE7A82</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>CNSplitViewToolbarButton.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDDC630D1695B4A900BE7A82</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CNSplitViewToolbarButtonCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDDC630E1695B4A900BE7A82</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>CNSplitViewToolbarButtonCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDDC630F1695B4A900BE7A82</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FDDC63051695B4A900BE7A82</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FDDC63111695B4A900BE7A82</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FDDC630A1695B4A900BE7A82</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FDDC63121695B4A900BE7A82</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FDDC630C1695B4A900BE7A82</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FDDC63131695B4A900BE7A82</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FDDC630E1695B4A900BE7A82</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FDE1E00D1889412900F06E33</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CNToolbarView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDE1E00E1889412900F06E33</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>CNToolbarView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDE1E00F1889412900F06E33</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FDE1E00E1889412900F06E33</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FDEF7F77188885A1007D7A19</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>name</key>
+			<string>Images.xcassets</string>
+			<key>path</key>
+			<string>CNSplitView Example/Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDEF7F78188885A1007D7A19</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FDEF7F77188885A1007D7A19</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>FDDC62C41695B39F00BE7A82</string>
+</dict>
+</plist>
